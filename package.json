@@ -1,0 +1,27 @@
+{
+  "name": "claude-intercept",
+  "version": "1.0.0",
+  "description": "MITM proxy for capturing and analyzing HTTP/S traffic with Claude",
+  "main": "src/cli.js",
+  "bin": {
+    "claude-intercept": "src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/cli.js start",
+    "stop": "node src/cli.js stop",
+    "setup": "node src/cli.js setup",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22.15.0"
+  },
+  "dependencies": {
+    "chalk": "^6.0.1",
+    "cli-table3": "^0.6.3",
+    "commander": "^15.0.0",
+    "express": "^4.22.3",
+    "node-forge": "^1.4.2",
+    "qrcode": "^1.5.4",
+    "ws": "^8.22.1"
+  }
+}
